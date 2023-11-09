@@ -25,6 +25,7 @@ export default async function Index() {
       <DeployButton />
       {isSupabaseConnected && <AuthButton />}
       <Header />
+      <Main />
       <Footer />
     </div>
   );
