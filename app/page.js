@@ -4,6 +4,7 @@ import { createClient } from "@/utils/supabase/server";
 import { cookies } from "next/headers";
 import Header from "@/layout/Header";
 import Footer from "@/layout/Footer";
+import Main from "@/layout/Main";
 
 export default async function Index() {
   const cookieStore = cookies();
@@ -23,7 +24,6 @@ export default async function Index() {
     <div>
       <DeployButton />
       {isSupabaseConnected && <AuthButton />}
-
       <Header />
       <Footer />
     </div>
