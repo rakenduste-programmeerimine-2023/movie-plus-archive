@@ -1,4 +1,3 @@
-import DeployButton from "../components/DeployButton";
 import AuthButton from "../components/AuthButton";
 import { createClient } from "@/utils/supabase/server";
 import { cookies } from "next/headers";
@@ -22,7 +21,6 @@ export default async function Index() {
 
   return (
     <div>
-      <DeployButton />
       {isSupabaseConnected && <AuthButton />}
       <Header />
       <Main />
