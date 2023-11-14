@@ -30,7 +30,7 @@ function Card(props) {
               props.readMoreHandler(imdbID);
             }}
           >
-            Read more...
+            <span /> Read more...
           </h>
         </p>
       </div>

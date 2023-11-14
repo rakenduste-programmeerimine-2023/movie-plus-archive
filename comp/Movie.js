@@ -6,7 +6,7 @@ function Movie(props) {
   const text = Title.replace(/^a-z0-9 /i, "").replace(/\s/, "+");
   return (
     <div className="row">
-      <div className="col s12">
+      <div className="col12">
         <h1 style={{ marginTop: 0 }}>{Title}</h1>
       </div>
       <div className="col s5">
@@ -20,7 +20,7 @@ function Movie(props) {
           />
         )}
       </div>
-      <div className="col s7">
+      <div className="col7">
         <ul style={{ marginTop: 0 }}>
           <li>Year: {Year}</li>
           <li>Runtime: {Runtime}</li>

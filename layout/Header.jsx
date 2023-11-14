@@ -8,7 +8,6 @@ function Header() {
                     </ul>
                 </div>
             </nav>
-            <a href="Main.jsx" class="nupp"> ⮪ </a>
         </header>
     );
   }
