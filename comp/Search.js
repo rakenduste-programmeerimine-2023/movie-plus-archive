@@ -23,7 +23,7 @@ class Search extends React.Component {
   render() {
     return (
       <div className="row">
-        <div className="input-field col s12">
+        <div className="search-bar input-field col s12">
           <input
             type="text"
             value={this.state.search}
@@ -48,6 +48,17 @@ class Search extends React.Component {
               value="all"
               onChange={this.handleFilter}
               checked={this.state.type === "all"}
+              className="with-gap"
+            />
+            <span>All</span>
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="type"
+              value="movie"
+              onChange={this.handleFilter}
+              checked={this.state.type === "movie"}
               className="with-gap"
             />
             <span>Movies</span>

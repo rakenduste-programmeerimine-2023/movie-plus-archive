@@ -1,7 +1,7 @@
 import Card from "./Card";
 function Films(props) {
   return (
-    <div className="films">
+    <div className="movies">
       {props.films && props.films.length ? (
         props.films.map((movie) => (
           <Card
