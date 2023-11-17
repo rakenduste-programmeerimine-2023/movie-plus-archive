@@ -15,14 +15,14 @@ function Card(props) {
         )}
       </div>
       <div className="card-content">
-        <span className="card-title activator black-text text-darken-4">
+        <span className="card-title activator grey-text text-darken-4">
           {Title}
         </span>
         <p>
           <span>
             {Year}, {Type}
           </span>
-          <h
+          <a
             href="#"
             className="right"
             onClick={(event) => {
@@ -31,7 +31,7 @@ function Card(props) {
             }}
           >
             <span /> Read more...
-          </h>
+          </a>
         </p>
       </div>
     </div>
