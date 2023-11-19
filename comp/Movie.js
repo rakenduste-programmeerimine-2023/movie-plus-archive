@@ -9,7 +9,7 @@ function Movie(props) {
       <div className="col s12">
         <h1 style={{ marginTop: 0 }}>{Title}</h1>
       </div>
-      <div className="col s5">
+      <div className="cox s5">
         {Poster !== "Not image, sorry :)" ? (
           <img className="responsive-img" src={Poster} alt="" />
         ) : (
@@ -20,7 +20,7 @@ function Movie(props) {
           />
         )}
       </div>
-      <div className="col s7">
+      <div className="com s7">
         <ul style={{ marginTop: 0 }}>
           <li>Year: {Year}</li>
           <li>Runtime: {Runtime}</li>
