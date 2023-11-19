@@ -7,7 +7,7 @@ function Movie(props) {
   return (
     <div className="row">
       <div className="col s12">
-        <h1 style={{ marginTop: 0 }}>{Title}</h1>
+        <h1 style={{ marginTop: 50 }}>{Title}</h1>
       </div>
       <div className="cox s5">
         {Poster !== "Not image, sorry :)" ? (
