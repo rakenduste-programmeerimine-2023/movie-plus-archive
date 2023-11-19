@@ -4,6 +4,12 @@
   position: absolute;
   left:0;top:0;
   text-decoration: none;
+  background-color:#65b829;
+  width: 93.5%;
+  height: 50px;
+}
+.row{
+  text-align: center;
 }
 
 .login{
@@ -14,8 +20,8 @@
   text-decoration: none;
   border: none;
   font-size: 30px;
-  background-color: white;
-
+  background-color: #65b829;
+  height: 50px;
 }
 .with-gap{
   font-size: 5px;
@@ -39,9 +45,8 @@ a{
 }
 li{
   font-family: Georgia;
-  font-size: 10px;
+  font-size: 15px;
 }
-
 
 .right{
   border-radius: 4px;
@@ -55,6 +60,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(193, 240, 193);
 }
 
 #root {
@@ -63,8 +69,10 @@ body {
   min-height: 100vh;
 }
 main {
-  padding-top: 20px;
+  padding-top: 25px;
   flex: 1 1 auto;
+  background-color: rgb(193, 240, 193);
+  overflow: hidden
 }
 
 .footer {
@@ -90,13 +98,17 @@ nav {
 }
 button {
   position: absolute;
-  right: 10px;
+  right: 450px;
 }
+
 
 label {
   margin-right: 50px;
 }
 
+.com{
+  text-align: left;
+}
 .loader {
   margin: 100px auto;
   font-size: 25px;
