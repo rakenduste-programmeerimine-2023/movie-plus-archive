@@ -29,7 +29,7 @@ class Search extends React.Component {
             value={this.state.search}
             onChange={(event) => this.setState({ search: event.target.value })}
             onKeyUp={this.handleEnter}
-            placeholder="For example — matrix"
+            placeholder="For example — monster high"
           />
           <button
             className="btn"
