@@ -23,13 +23,13 @@ class Search extends React.Component {
   render() {
     return (
       <div className="row">
-        <div className="search-bar input-field col s12">
+        <div className="input-field col s12">
           <input
             type="text"
             value={this.state.search}
             onChange={(event) => this.setState({ search: event.target.value })}
             onKeyUp={this.handleEnter}
-            placeholder="Example: monster high"
+            placeholder="For example — matrix"
           />
           <button
             className="btn"
@@ -61,7 +61,7 @@ class Search extends React.Component {
               checked={this.state.type === "movie"}
               className="with-gap"
             />
-            <span>Movies</span>
+            <span>Movies only</span>
           </label>
           <label>
             <input
@@ -72,7 +72,7 @@ class Search extends React.Component {
               checked={this.state.type === "series"}
               className="with-gap"
             />
-            <span>Series</span>
+            <span>Series only</span>
           </label>
         </p>
       </div>
