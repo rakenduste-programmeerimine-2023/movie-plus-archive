@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 @layer base {
   :root {
@@ -22,9 +22,12 @@
 
 @layer base {
   * {
-    @apply border-foreground/20;
+    @layer {};
+      .border-foreground-20 {
+        border-color: var(--foreground);
+      }
+    }
   }
-}
 
 .animate-in {
   animation: animateIn 0.3s ease 0.15s both;
@@ -129,19 +132,29 @@ main {
 
 
 .movies {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
+
+.card {
+  margin: 10px;
+}
+
+.card .activator {
+  width: 200px; 
+  height: auto; 
+}
+
 
 .activator{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 70px;
+  gap: 50px;
 }
 
 .card .card-title {
-  font-size: 27px;
+  font-size: 16px;
 }
 
 
